@@ -1,5 +1,6 @@
 #!/bin/bash
-
+### Scipt which automatically adds bash scripts to you machines aliases. This will make it so your bash script is now executable as a command which you can execute without giving the entire path to script everytime. ###
+### Takes one argument which is the path to the script. It will automatically name the alias based on the script name. ###
 # Validate input
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 /path/to/your/script.sh"

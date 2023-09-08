@@ -1,6 +1,5 @@
 #!/bin/zsh
-
-
+### Sets up python virtual environment + 
 source dbt-env/bin/activate
 
 # Set the DBT_PROFILES_DIR environment variable

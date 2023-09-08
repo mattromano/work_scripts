@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+### Automatically dbt runs all changed files in provided branch. Takes one argument of the PR you are looking to test ###
+
 # Script takes one argument, which is the name of the branch
 BRANCH=$1
 echo "Checking out branch: $BRANCH"

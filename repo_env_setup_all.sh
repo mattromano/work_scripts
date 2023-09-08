@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+### Less helpful after initial mac is set up, but script automtically will pull and set up all Flipside repos provided in the list on line 33 ###
 # Check if the script is called with an argument
 if [[ $# -eq 1 && "$1" == "false" ]]; then
   echo "Loop execution is skipped, just setting up pythong venv"

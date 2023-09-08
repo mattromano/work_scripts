@@ -1,5 +1,5 @@
 #!/bin/bash
-
+### prints out files paths for all changed files in current branch from main branch ###
 # Fetch the latest changes from the remote main branch
 git fetch origin main
 

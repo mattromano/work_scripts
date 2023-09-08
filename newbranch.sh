@@ -1,5 +1,5 @@
 #!/bin/zsh
-
+### Automatically updates main branch, creates new branch, and then sets up the virtual environment + DBT profile variables 
 #activate virtual env
 source dbt-env/bin/activate
 

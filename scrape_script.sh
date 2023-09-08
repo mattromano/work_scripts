@@ -1,5 +1,8 @@
 #!/bin/bash
 
+### This script will do a regex search of any provided folder path (and all folders in that path). It will export any found addresses into a TSV document with 6 total columns: 
+    ## One with the line of code where the address was found, the address itself, the line number where the address was found, the filepath, the project, and a result of simple table search. Labels can be added and removed on line 20
+    ## TODO: Consolidate labels to only have one for each blockchain - ie ETH is not eth or ethereum but just ethereum.
 # Check if the provided path is valid
 if [ ! -d "$1" ]; then
     echo "Usage: $0 path_to_repository"
