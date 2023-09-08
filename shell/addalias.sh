@@ -14,7 +14,7 @@ if [ ! -f "$1" ]; then
 fi
 
 # Set the destination directory
-dest_dir="/Users/mattromano/Desktop/scripts"
+dest_dir="/Users/$USER/Desktop/scripts"
 
 # Ensure the directory exists
 if [ ! -d "$dest_dir" ]; then

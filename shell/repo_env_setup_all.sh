@@ -18,7 +18,7 @@ if [[ $# -eq 1 && "$1" == "false" ]]; then
       pip install --upgrade dbt-snowflake==1.4.0
 
       # Set the DBT_PROFILES_DIR environment variable
-      export DBT_PROFILES_DIR="/Users/$user_name/.dbt"
+      export DBT_PROFILES_DIR="/Users/$USER/.dbt"
 
       # Upgrade Pip
       python -m pip install --upgrade pip
