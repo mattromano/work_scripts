@@ -84,9 +84,9 @@
         "key": "f4",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
-          "text": "open target/compiled/ethereum_models/${relativeFile}\u000D"
-        }
-      }
+            "text": "PROJECT_NAME=$(grep 'name:' dbt_project.yml | awk '{print $2}' | tr -d '\"') && [ ! -f target/compiled/$PROJECT_NAME/${relativeFile} ] && dbt compile -m ${relativeFile} && open target/compiled/$PROJECT_NAME/${relativeFile} || open target/compiled/$PROJECT_NAME/${relativeFile}\u000D"
+        },
+      }, 
     {
         "key": "f6",
         "command": "runCommands",

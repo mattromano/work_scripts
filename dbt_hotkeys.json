@@ -1,0 +1,74 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "f4",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "PROJECT_NAME=$(grep 'name:' dbt_project.yml | awk '{print $2}' | tr -d '\"') && [ ! -f target/compiled/$PROJECT_NAME/${relativeFile} ] && dbt compile -m ${relativeFile} && open target/compiled/$PROJECT_NAME/${relativeFile} || open target/compiled/$PROJECT_NAME/${relativeFile}\u000D"
+        },
+      }, 
+    {
+        "key": "f6",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "workbench.action.terminal.sendSequence",
+              "args": {
+                "text": "dbt run -m ${relativeFile}\u000D" }
+,              },
+            {
+              "command": "workbench.action.terminal.focus"
+            }
+          ]
+        }
+      },
+      {
+        "key": "f7",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "workbench.action.terminal.sendSequence",
+              "args": {
+                "text": "dbt run -m ${relativeFile} --full-refresh\u000D" }
+,              },
+            {
+              "command": "workbench.action.terminal.focus"
+            }
+          ]
+        }
+      },
+      {
+        "key": "f8",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "workbench.action.terminal.sendSequence",
+              "args": {
+                "text": "dbt run -m ${relativeFileDirname}\u000D" }
+,              },
+            {
+              "command": "workbench.action.terminal.focus"
+            }
+          ]
+        }
+      },
+      {
+        "key": "f9",
+        "command": "runCommands",
+        "args": {
+          "commands": [
+            {
+              "command": "workbench.action.terminal.sendSequence",
+              "args": {
+                "text": "dbt run -m ${relativeFileDirname} --full-refresh\u000D" }
+,              },
+            {
+              "command": "workbench.action.terminal.focus"
+            }
+          ]
+        }
+      }
+]
