@@ -30,7 +30,7 @@ if [[ $# -eq 1 && "$1" == "false" ]]; then
       cd ..
 
 else
-  repo_list=("ethereum" "polygon" "bsc" "arbitrum" "base" "optimism" "gnosis" "crosschain" "avalanche")
+  repo_list=("arbitrum")
 
   # Set the user variable
   user_name=$USER
