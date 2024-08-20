@@ -1,10 +1,10 @@
 #!/bin/zsh
 
 # Path to the directory containing markdown files
-dir_path="/Users/mattromano/Desktop/repos/ethereum-models/models/doc_descriptions/aave"
+dir_path="/Users/mattromano/Desktop/repos/kaia-models/models/doc_descriptions/dex"
 
 # Output file
-output_file="/Users/mattromano/Desktop/repos/ethereum-models/models/doc_descriptions/complete_lending_docs.md"
+output_file="/Users/mattromano/Desktop/repos/kaia-models/models/doc_descriptions/complete_dex_docs.md"
 
 # Remove the output file if it already exists
 rm -f "$output_file"
@@ -16,7 +16,7 @@ for file in "$dir_path"/*.md; do
         # Concatenate the content of the current file to the output file
         cat "$file" >> "$output_file"
         # Add a blank line after the content of the current file
-        echo "" >> "$output_file"
+        printf "\n\n" >> "$output_file"
     fi
 done
 
